@@ -1,0 +1,5 @@
+ctransformers==0.2.5 # need this library to load the quantised model 
+sentence-transformers==2.2.2 # need this to work with the embedding model which we'll downlaod from hf
+pinecone-client
+langchain==0.0.225
+flask
