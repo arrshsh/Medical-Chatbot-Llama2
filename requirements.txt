@@ -3,3 +3,7 @@ sentence-transformers==2.2.2 # need this to work with the embedding model which 
 pinecone-client
 langchain==0.0.225
 flask
+pypdf
+python-dotenv
+langchain-community 
+langchain-core 
