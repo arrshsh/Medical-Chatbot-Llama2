@@ -1,4 +1,4 @@
-# Medical-Chatbot-Llama2  
+# Financial-Chatbot-Llama2  
 End-to-end finance chatbot using Meta Llama2  
 
 ---
