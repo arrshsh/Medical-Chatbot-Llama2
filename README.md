@@ -1,61 +1,51 @@
-# Medical-Chatbot-Llama2
-End to end medical chatbot using Meta Llama2
+# Medical-Chatbot-Llama2  
+End-to-end medical chatbot using Meta Llama2  
 
-## Steps to run the project 
+---
 
-Clone this repository:
+## Steps to Run the Project  
+
+### 1. Clone this repository:  
 ```bash
-https://github.com/arrshsh/Medical-Chatbot-Llama2.git
+git clone https://github.com/arrshsh/Medical-Chatbot-Llama2.git
+cd Medical-Chatbot-Llama2
 ```
 
+### 2. Set up Conda environment
 ```bash
 conda create -n mchatbot python=3.8 -y
-```
-
-```bash
 conda activate mchatbot
 ```
 
+### 3. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-Create a .env file in the root directory and add your Pinecone credentials as follows:
+### 4. Configure .env
+Create a .env file in the root directory and add these:
+PINECONE_API_KEY="your_api_key_here"
+PINECONE_API_ENV="your_env_here"
+
+### 5. Downlaod the Llama2 model (from: ```https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main```) and place it in model/ folder
+
+### 6. Generate Pinecone index:
 ```bash
-PINECONE_API_KEY="cejknjrbv"
-PINECONE_API_ENV="eevkj"
-```
-
-Download the Llama 2 Model:
-```
-llama-2-7b-chat.ggmlv3.q4_0.bin
-```
-
-From the following link:
-```bash
-https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main
-```
-and store it in model folder in the root folder 
-
-Update your Pinecone credentials in the .env file 
-
-Run the following command:
-```bash 
 python store_index.py
 ```
 
-Finally, launch the Flask app:
-```bash 
+### 7. Launch the Flask app:
+```bash
 python app.py
 ```
-![](final/final_page.jpeg)
-*The landing page should look like this*
 
-Now, open the localhost on 5000 port 
+### 8. Open localhost:5000 in your browser
 
-Tech Stack used:
-- Python 
+![Landing Page](final/final_page.jpeg)  
+
+## Tech Stack:
+- Python
 - LangChain
 - Flask
 - Meta Llama2
-- Pinecone
+- inecone
