@@ -48,6 +48,8 @@ Finally, launch the Flask app:
 ```bash 
 python app.py
 ```
+![](final/final_page.jpeg)
+*The landing page should look like this*
 
 Now, open the localhost on 5000 port 
 
