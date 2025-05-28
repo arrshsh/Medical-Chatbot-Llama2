@@ -1,11 +1,12 @@
 ctransformers==0.2.5 # need this library to load the quantised model 
 sentence-transformers==2.2.2 # need this to work with the embedding model which we'll downlaod from hf
-pinecone-client
 langchain==0.0.225
 flask
 pypdf
 python-dotenv
-langchain-community 
 langchain-core 
 sentence_transformers
+langchain-community==0.0.20
+langchain-core==0.1.23
+pinecone-client>=3.0.0
 -e . # to install local package

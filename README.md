@@ -32,4 +32,28 @@ llama-2-7b-chat.ggmlv3.q4_0.bin
 ```
 
 From the following link:
+```bash
 https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main
+```
+and store it in model folder in the root folder 
+
+Update your Pinecone credentials in the .env file 
+
+Run the following command:
+```bash 
+python store_index.py
+```
+
+Finally, launch the Flask app:
+```bash 
+python app.py
+```
+
+Now, open the localhost on 5000 port 
+
+Tech Stack used:
+- Python 
+- LangChain
+- Flask
+- Meta Llama2
+- Pinecone
