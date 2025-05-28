@@ -1,5 +1,5 @@
 # Medical-Chatbot-Llama2  
-End-to-end medical chatbot using Meta Llama2  
+End-to-end finance chatbot using Meta Llama2  
 
 ---
 
@@ -14,7 +14,7 @@ cd Medical-Chatbot-Llama2
 ### 2. Set up Conda environment
 ```bash
 conda create -n mchatbot python=3.8 -y
-conda activate mchatbot
+conda activate chatbot
 ```
 
 ### 3. Install dependencies
@@ -45,11 +45,11 @@ python app.py
 
 ### 8. Open localhost:5000 in your browser
 
-![Landing Page](final/final_page.jpeg)  
+![Landing Page](final/final_page.png)  
 
 ## Tech Stack:
 - Python
 - LangChain
 - Flask
 - Meta Llama2
-- inecone
+- Pinecone

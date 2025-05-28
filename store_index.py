@@ -1,6 +1,8 @@
 from src.helper import load_pdf, text_split, download_hugging_face_embeddings
 from pinecone import Pinecone, ServerlessSpec
 from langchain_community.vectorstores import Pinecone as PineconeVectorStore
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+
 from dotenv import load_dotenv
 import os 
 

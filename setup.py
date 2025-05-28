@@ -6,7 +6,7 @@
 from setuptools import find_packages, setup
 
 setup(
-    name = "End-to-end Medical Chatbot",
+    name = "End-to-end Financial Chatbot",
     version = "0.0.0",
     author= "Mohammad Arsh Vahora",
     author_email= "vahora4@uwindsor.ca",

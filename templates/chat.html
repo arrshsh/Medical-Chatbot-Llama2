@@ -21,11 +21,11 @@
 						<div class="card-header msg_head">
 							<div class="d-flex bd-highlight">
 								<div class="img_cont">
-                                    <img src="{{ url_for('static', filename='images/nurses_3567474.png') }}" class="rounded-circle user_img">
+                                    <img src="{{ url_for('static', filename='images/icon.png') }}" class="rounded-circle user_img">
                                     <span class="online_icon"></span>
                                 </div>
 								<div class="user_info">
-									<span>Medical Chatbot</span>
+									<span>Financial Chatbot</span>
 									<p>Ask me anything!</p>
 								</div>
 							</div>
@@ -68,7 +68,7 @@
 						type: "POST",
 						url: "/get",
 					}).done(function(data) {
-						var botHtml = '<div class="d-flex justify-content-start mb-4"><div class="img_cont_msg"><img src="static/images/doctor-round-avatar-medicine-flat-avatar-with-male-doctor-medical-clinic-team-round-icon-medical-collection-illustration-vector.jpg" class="rounded-circle user_img_msg"></div><div class="msg_cotainer">' + data + '<span class="msg_time">' + str_time + '</span></div></div>';
+						var botHtml = '<div class="d-flex justify-content-start mb-4"><div class="img_cont_msg"><img src="{{ url_for('static', filename='images/icon.png') }}" class="rounded-circle user_img_msg"></div><div class="msg_cotainer">' + data + '<span class="msg_time">' + str_time + '</span></div></div>';
 						$("#messageFormeight").append($.parseHTML(botHtml));
 					});
 					event.preventDefault();
