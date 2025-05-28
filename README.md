@@ -30,7 +30,8 @@ PINECONE_API_ENV="your_env_here"
 ### 5. Downlaod the Llama2 model and place it in model/ folder
 Follow this link: 
 ```bash 
-https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main```
+https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main
+```
 
 ### 6. Generate Pinecone index:
 ```bash
